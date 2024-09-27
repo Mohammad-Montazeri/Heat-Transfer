@@ -1,0 +1,16 @@
+﻿# 
+# This file contains the parameter values of the Design Points successfully updated by ANSYS Workbench.
+# Project name: fisrt
+# Creation date: 06/23/2023 01:51:32
+# 
+# 06/23/2023 01:51:32
+# The parameters defined in the project are:
+# ,P1 - parameter-1 [W]
+# 
+# The following header line defines the name of the columns by reference to the parameters.
+Name,P1
+DP 0,-873.52549
+# 
+# A non parametric change occurred and invalidated design point results.
+# 06/29/2023 13:25:36
+# 

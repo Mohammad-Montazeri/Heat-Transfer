@@ -1,0 +1,138 @@
+
+Build Time: Aug  5 2019 15:47:34 EDT 
+Executable Path: C:/PROGRA~1/ANSYSI~1/v195/fluent/ntbin/win64/fluent.exe
+
+-------------------------------------------------------------------------------
+ID    Hostname         Core  O.S.         PID    Vendor                      
+-------------------------------------------------------------------------------
+n7    DESKTOP-1ABIJOM  8/8  Windows-x64  8720   Intel(R) Core(TM) i7-10510U 
+n6    DESKTOP-1ABIJOM  7/8  Windows-x64  15136  Intel(R) Core(TM) i7-10510U 
+n5    DESKTOP-1ABIJOM  6/8  Windows-x64  11236  Intel(R) Core(TM) i7-10510U 
+n4    DESKTOP-1ABIJOM  5/8  Windows-x64  7916   Intel(R) Core(TM) i7-10510U 
+n3    DESKTOP-1ABIJOM  4/8  Windows-x64  14476  Intel(R) Core(TM) i7-10510U 
+n2    DESKTOP-1ABIJOM  3/8  Windows-x64  10724  Intel(R) Core(TM) i7-10510U 
+n1    DESKTOP-1ABIJOM  2/8  Windows-x64  14452  Intel(R) Core(TM) i7-10510U 
+n0*   DESKTOP-1ABIJOM  1/8  Windows-x64  12072  Intel(R) Core(TM) i7-10510U 
+host  DESKTOP-1ABIJOM       Windows-x64  8832   Intel(R) Core(TM) i7-10510U 
+
+MPI Option Selected: ibmmpi
+Selected system interconnect: default
+-------------------------------------------------------------------------------
+Reading "\"| gunzip -c \\"C:\Users\TAKESTANCC\fisrt_files\dp0\FLU\Fluent\SYS-Setup-Output.cas.gz\\"\""...
+Buffering for file scan...
+
+
+
+   36696 mixed cells, zone  4, binary.
+   36696 cell partition ids, zone  4, 8 partitions, binary.
+   72075 2D interior faces, zone  1, binary.
+     130 2D velocity-inlet faces, zone  5, binary.
+     130 2D pressure-outlet faces, zone  6, binary.
+    1820 2D wall faces, zone  7, binary.
+     444 2D wall faces, zone  8, binary.
+   37890 nodes, binary.
+37890 node flags, binary.
+
+Building...
+     mesh
+	distributing mesh
+		parts........,
+		faces........,
+		nodes........,
+		cells........,
+        bandwidth reduction using Reverse Cuthill-McKee: 4561/114 = 40.0088
+     materials,
+     interface,
+     domains,
+	mixture
+     zones,
+	walls
+	tubes
+	outlet
+	inlet
+	interior-fluid
+	fluidSetting fluid (mixture) ... Done.
+ Setting zone id of fluid to 4.
+ Setting zone id of interior-fluid to 1.
+ Setting zone id of inlet to 5.
+ Setting zone id of outlet to 6.
+ Setting zone id of tubes to 7.
+ Setting zone id of walls to 8.
+Done.
+Setting fluid (mixture) ... Done.
+Setting interior-fluid (mixture) ... Done.
+Setting inlet (mixture) ... Done.
+Setting outlet (mixture) ... Done.
+Setting tubes (mixture) ... Done.
+Setting walls (mixture) ... Done.
+
+     parallel,
+Done.
+
+Preparing mesh for display...
+Done.
+Reading "\"| gunzip -c \\"C:\Users\TAKESTANCC\fisrt_files\dp0\FLU\Fluent\SYS-11-00073.dat.gz\\"\""...
+
+
+Parallel variables...
+Done.
+
+  iter  continuity  x-velocity  y-velocity      energy           k       omega     time/iter
+    73  9.6054e-04  3.6101e-06  1.4006e-06  3.1250e-08  1.6224e-05  1.0123e-05  0:00:00 1200
+    74  8.5288e-04  3.1804e-06  1.1903e-06  2.7815e-08  1.3610e-05  9.0349e-06  0:00:00 1199
+!   75 solution is converged
+    75  7.6884e-04  2.9034e-06  1.0208e-06  2.5133e-08  1.1659e-05  8.1294e-06  0:00:00 1198
+Registering ReportDefFiles, ("C:\Users\TAKESTANCC\fisrt_files\dp0\FLU\Fluent\.\\report-def-0-rfile.out")
+Writing "| gzip -2cf > SolutionMonitor.gz"...
+Writing temporary file C:\\Users\\TAKEST~1\\AppData\\Local\\Temp\\flntgz-88322 ...
+Done.
+
+Writing data to C:\\Users\\TAKESTANCC\\fisrt_files\\dp0\\FLU\\Fluent\\SYS.ip ...
+	x-coord
+	y-coord
+	pressure
+	x-velocity
+	y-velocity
+	temperature
+	k
+	omega
+	hyb_init-0
+	hyb_init-1
+Done.
+Writing "| gzip -2cf > SYS-12.cas.gz"...
+Writing temporary file C:\\Users\\TAKEST~1\\AppData\\Local\\Temp\\flntgz-88323 ...
+   36696 mixed cells, zone  4, binary.
+   36696 cell partition ids, zone  4, 8 partitions, binary.
+   72075 2D interior faces, zone  1, binary.
+     130 2D velocity-inlet faces, zone  5, binary.
+     130 2D pressure-outlet faces, zone  6, binary.
+    1820 2D wall faces, zone  7, binary.
+     444 2D wall faces, zone  8, binary.
+   37890 nodes, binary.
+   37890 node flags, binary.
+Done.
+
+Writing "| gzip -2cf > SYS-12-00075.dat.gz"...
+Writing temporary file C:\\Users\\TAKEST~1\\AppData\\Local\\Temp\\flntgz-88324 ...
+Done.
+
+
+Performance Timer for 2 iterations on 8 compute nodes
+  Average wall-clock time per iteration:              0.149 sec
+  Global reductions per iteration:                      137 ops
+  Global reductions time per iteration:               0.000 sec (0.0%)
+  Message count per iteration:                        24456 messages
+  Data transfer per iteration:                        3.611 MB
+  LE solves per iteration:                                4 solves
+  LE wall-clock time per iteration:                   0.081 sec (54.5%)
+  LE global solves per iteration:                         9 solves
+  LE global wall-clock time per iteration:            0.002 sec (1.0%)
+  LE global matrix maximum size:                        67
+  AMG cycles per iteration:                           9.000 cycles
+  Relaxation sweeps per iteration:                      774 sweeps
+  Relaxation exchanges per iteration:                     0 exchanges
+  LE early protections (stall) per iteration:           0.000 times
+  LE early protections (divergence) per iteration:      0.000 times
+
+  Total wall-clock time:                              0.297 sec
+
